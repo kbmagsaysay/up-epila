@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+.container > div {
+  display: inline-block;
+  
+ 
+  box-sizing: border-box;
+}
+
+.container > div img {
+  width: 100%;
+  height: auto;
+}
+
+.container div.text {
+  /* this is the weakness of this layout.  To get all the boxes to be the same height, you have to set this to a fixed height. */
+  height: 200px;
+}
+
+.menu-container {
+  /* ... */
+  display: flex;
+  width: 1000px;
+  
+  justify-content : center;
+}
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.queue-grid-container {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+}
+
+.queue-grid {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+
+.queue-grid-item {
+  border: 1px solid #fff;
+  width: 400px;
+  height: 230px;
+}
+.image-logo {
+   width:50%;
+   height:100px;
+   object-fit:scale-down;
+   object-position:50% 50%;
+  }
+.inProcess {
+   color: yellow;
+   background: green;
+}
